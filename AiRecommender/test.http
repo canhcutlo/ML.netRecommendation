@@ -1,0 +1,29 @@
+@baseUrl = http://localhost:5000
+
+### POST /api/predict - Dự đoán rating phim cho một user
+POST {{baseUrl}}/api/predict
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "movieId": 101,
+  "rating": 0
+}
+
+###
+
+### POST /api/predict - Thử với user và phim khác
+POST {{baseUrl}}/api/predict
+Content-Type: application/json
+
+{
+  "userId": 5,
+  "movieId": 107,
+  "rating": 0
+}
+
+###
+
+### GET /api/external - Lấy gợi ý phim từ TMDB
+GET {{baseUrl}}/api/external
+Accept: application/json

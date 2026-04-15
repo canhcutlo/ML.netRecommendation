@@ -1,0 +1,17 @@
+@baseUrl = http://localhost:5000
+
+### GET /api/external - Lấy dữ liệu từ API bên ngoài
+GET {{baseUrl}}/api/external
+Accept: application/json
+
+###
+
+### POST /api/predict - Dự đoán rating cho một bộ phim
+POST {{baseUrl}}/api/predict
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "movieId": 101,
+  "rating": 0
+}
