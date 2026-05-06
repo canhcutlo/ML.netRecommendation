@@ -35,15 +35,19 @@ public class TrainingBackgroundService : BackgroundService
         {
             _logger.LogInformation("Cached model found in Blob Storage. Skipping grid search.");
 
-            using var modelStream = await _blobStorage.DownloadAsync(ModelBlobName, stoppingToken);
-            using var fs = File.Create(modelSavePath);
-            await modelStream!.CopyToAsync(fs, stoppingToken);
+            using (var modelStream = await _blobStorage.DownloadAsync(ModelBlobName, stoppingToken))
+            using (var fs = File.Create(modelSavePath))
+            {
+                await modelStream!.CopyToAsync(fs, stoppingToken);
+            } // fs disposed here — file handle released before LoadModel reads it
 
             if (!File.Exists(jsonPath) && await _blobStorage.ExistsAsync(ResultsBlobName, stoppingToken))
             {
                 using var jsonStream = await _blobStorage.DownloadAsync(ResultsBlobName, stoppingToken);
-                using var jfs = File.Create(jsonPath);
-                await jsonStream!.CopyToAsync(jfs, stoppingToken);
+                using (var jfs = File.Create(jsonPath))
+                {
+                    await jsonStream!.CopyToAsync(jfs, stoppingToken);
+                }
             }
 
             _predictionService.LoadModel(modelSavePath);

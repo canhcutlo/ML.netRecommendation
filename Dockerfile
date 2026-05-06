@@ -14,9 +14,7 @@ FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS final
 WORKDIR /app
 
 # Non-root user for security
-RUN addgroup --system appgroup && adduser --system --ingroup appgroup appuser
-USER appuser
-
+RUN groupadd --system appgroup && useradd --system --gid appgroup appuser
 COPY --from=build /app/publish .
 
 EXPOSE 8080

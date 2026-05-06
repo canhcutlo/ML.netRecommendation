@@ -1,0 +1,19 @@
+## .NET Build Outputs
+bin/
+obj/
+
+## Visual Studio
+.vs/
+*.user
+*.suo
+
+## JetBrains
+.idea/
+*.sln.iml
+
+## OS
+.DS_Store
+Thumbs.db
+
+## Secrets/Config (never commit)
+**/appsettings.Production.json
