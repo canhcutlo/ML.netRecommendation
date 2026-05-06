@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="MLAppHyperT/MLAppHyperT.csproj" />
+  <Project Path="SpotifyRec_ConsoleApp1/SpotifyRec_ConsoleApp1.csproj" />
+</Solution>

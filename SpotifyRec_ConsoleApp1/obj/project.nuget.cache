@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "7ewYZiTrffA=",
+  "success": true,
+  "projectFilePath": "C:\\Desktopktop\\HW\\MLAppHyperT\\SpotifyRec_ConsoleApp1\\SpotifyRec_ConsoleApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\trung\\.nuget\\packages\\microsoft.ml\\4.0.0\\microsoft.ml.4.0.0.nupkg.sha512",
+    "C:\\Users\\trung\\.nuget\\packages\\microsoft.ml.cpumath\\4.0.0\\microsoft.ml.cpumath.4.0.0.nupkg.sha512",
+    "C:\\Users\\trung\\.nuget\\packages\\microsoft.ml.dataview\\4.0.0\\microsoft.ml.dataview.4.0.0.nupkg.sha512",
+    "C:\\Users\\trung\\.nuget\\packages\\microsoft.ml.recommender\\0.22.0\\microsoft.ml.recommender.0.22.0.nupkg.sha512",
+    "C:\\Users\\trung\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\trung\\.nuget\\packages\\system.codedom\\8.0.0\\system.codedom.8.0.0.nupkg.sha512",
+    "C:\\Users\\trung\\.nuget\\packages\\system.collections.immutable\\8.0.0\\system.collections.immutable.8.0.0.nupkg.sha512",
+    "C:\\Users\\trung\\.nuget\\packages\\system.memory\\4.6.0\\system.memory.4.6.0.nupkg.sha512",
+    "C:\\Users\\trung\\.nuget\\packages\\system.numerics.tensors\\8.0.0\\system.numerics.tensors.8.0.0.nupkg.sha512",
+    "C:\\Users\\trung\\.nuget\\packages\\system.reflection.emit.lightweight\\4.7.0\\system.reflection.emit.lightweight.4.7.0.nupkg.sha512",
+    "C:\\Users\\trung\\.nuget\\packages\\system.threading.channels\\8.0.0\\system.threading.channels.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
